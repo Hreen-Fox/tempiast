@@ -1,0 +1,30 @@
+/* 1200 - 1920 */
+@media screen and (max-width: 1920px) {
+
+}
+/* 960 - 1200 */
+@media screen and (max-width: 1200px) {
+
+}
+/* 960 - 992 */
+@media screen and (max-width: 992px) {
+
+}
+/* 786 - 960 */
+@media screen and (max-width: 960px) {
+
+}
+/* 576 - 786 */
+@media screen and (max-width: 786px) {
+
+}
+/* 376 - 576 */
+@media screen and (max-width: 576px) {
+    header .content-header-bottom nav{
+        justify-content: right;
+    }
+}
+/* 0 - 376 */
+@media screen and (max-width: 376px) {
+
+}
