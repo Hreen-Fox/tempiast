@@ -16,6 +16,177 @@
     <link rel="stylesheet" href="./css/adapter.css">
     <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .quote {
+  background: url(../img/login.jpg);
+  background-position: 0% 0%;
+  margin-bottom: 20px;
+}
+
+.quote .quoteWrapper {
+  backdrop-filter: blur(6px);
+  width: 100%;
+  height: 100%;
+  padding: 160px 0;
+}
+
+.quote .quoteWrapper p {
+  font-family: 'Caveat', Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.quote .quoteWrapper p span {
+  display: block;
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.blockInfo .cardContainer {
+  padding: 10px 0;
+}
+
+.blockInfo .cardContainer .row {
+  display: flex;
+}
+
+.blockInfo .card {
+  width: 25%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.blockInfo .card .top {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: .2s;
+}
+
+.blockInfo .card p {
+  font-size: 15px;
+  text-align: justify;
+  text-indent: 0;
+}
+
+.blockInfo .row:nth-child(1) .card:nth-child(1) .top {
+  background: #36A8EB;
+}
+
+.blockInfo .row:nth-child(1) .card:nth-child(2) .top {
+  background: #088EDD;
+}
+
+.blockInfo .row:nth-child(1) .card:nth-child(3) .top {
+  background: #1977CC;
+}
+
+.blockInfo .row:nth-child(1) .card:nth-child(4) .top {
+  background: #1063AF;
+}
+
+.blockInfo .row:nth-child(2) .card:nth-child(1) .top {
+  background: #235c7d;
+}
+
+.blockInfo .row:nth-child(2) .card:nth-child(2) .top {
+  background: #0d5b87;
+}
+
+.blockInfo .row:nth-child(2) .card:nth-child(3) .top {
+  background: #0b4e8a;
+}
+
+.blockInfo .row:nth-child(2) .card:nth-child(4) .top {
+  background: #004e97;
+}
+
+.blockInfo .card .bottom .bottom-wrapper {
+  background: #476B8D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.blockInfo .card .bottom .bottom-wrapper div {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.blockInfo .card .bottom a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid;
+  padding: 10px;
+}
+
+.blockInfo .card .bottom a:hover {
+  text-decoration: underline;
+}
+
+.blockInfo .card .bottom {
+  transform: scaleY(0);
+  position: absolute;
+  width: 100%;
+  transition: .2s;
+}
+
+.row:nth-child(1) .card:hover .bottom {
+  z-index: 1;
+  transform: scaleY(1);
+}
+
+.row:nth-child(2) .card:hover .bottom {
+  z-index: 1;
+  transform: scaleY(1);
+}
+
+.card:hover .top {
+  z-index: 1;
+  transform: translateY(-82px);
+}
+
+.linkBlock {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.linkBlock a {
+  color: #386ba8;
+  text-decoration: none;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.linkBlock a:first-child {
+  border-left-width: 2px;
+}
+
+.linkBlock a:last-child {
+  border-right-width: 2px;
+}
+
+.linkBlock a:hover {
+  text-decoration: underline;
+}
+
+.textBlack{
+  color: black;
+}
+    </style>
 </head>
 
 <body>
@@ -98,7 +269,7 @@
                         дополнительным профессиональным программам переподготовки и повышения квалификации.
                     </p>
                     <p>
-                        Наша компания зарегистрирована в установленном Российской Федерации порядке и имеет лицензию
+                        Наша компания <a href="https://drive.google.com/file/d/11XcUE2Zjj885ESTcdyMzn8tOVsQw4BUa/view?usp=sharing" target="_blank" rel="nofollow">зарегистрирована</a> в установленном Российской Федерации порядке и имеет <a href="на 4 док" rel="nofollow" target="_blank">лицензию</a>
                         Министерства образования и науки Тамбовской области. Программы обучения разработаны в
                         соответствии с нормами Федерального закона от 29.12.2012 № 273-ФЗ «Об образовании в Российской
                         Федерации», с учетом требований приказа МЧС России от 18.11.2021 № 806 «Об определении Порядка,
@@ -147,14 +318,13 @@
                             <div class="row">
                                 <div class="card">
                                     <div class="top">
-                                        <p>с учетом требований приказа МЧС России от 18.11.2021 № 806 «Об определении Порядка,
-                                            видов, сроков обучения лиц, осуществляющих трудовую или служебную деятельность ...», от
-                                            05.09.2021 № 596 «Об утверждении типовых дополнительных
-                                            профессиональных программ в области пожарной безопасности», от 15.11.2022 № 1156
-                                            "Об утверждении типовых дополнительных профессиональных программ, применяемых при обучении
-                                            работников соискателей лицензии...", приказа Министерства труда и
-                                            социальной защиты Российской Федерации от 11.10.2021 № 696н «Об утверждении
-                                            профессионального стандарта «Специалист по пожарной профилактике»</p>
+                                        <p>Повышение квалификации для руководителей организаций,
+                                            лиц, назначенных руководителем организации
+                                            ответственными за обеспечение пожарной безопасности на
+                                            объектах защиты, в которых могут одновременно находиться
+                                            50 и более человек, объектах защиты, отнесенных к
+                                            категориям повышенной взрывопожароопасности,
+                                            взрывопожароопасности, пожароопасности (16 часов).</p>
                                     </div>
                                     <div class="bottom">
                                         <div class="bottom-wrapper">
@@ -320,7 +490,7 @@
                                                     13.03 - 16.03
                                                 </p>
                                                 <p>Стоимость: <br>
-                                                    2300+900 за каждый
+                                                    2300+900 <br> за каждый <br>
                                                     модуль</p>
                                             </div>
                                         </div>
@@ -339,7 +509,7 @@
                                                     Индивидуально <br><br><br><br>
                                                 </p>
                                                 <p>Стоимость: <br>
-                                                     250р. за 1 человека</p>
+                                                     250р. за <br> 1 человека</p>
                                             </div>
                                         </div>
                                     </div>
@@ -378,7 +548,7 @@
                     <div class="itcss">
                         <div class="itcss__wrapper">
                             <div class="itcss__items">
-                                <div class="itcss__item" style="background: url(./img/login.jpg)">
+                                <div class="itcss__item" style="background: url(./img/login.jpg);background-size: cover;">
                                     <div class="container">
                                         <p>Разъяснения МЧС России по однотипным обращениям контролируемых лиц и их представителей по вопросам обучения мерам пожарной безопасности</p>
                                         <p>
@@ -392,7 +562,7 @@
                                         <a href="./pages/useful.html#sec1">Подробнее -></a>
                                     </div>
                                 </div>
-                                <div class="itcss__item" style="background: url(./img/1648105175_22-gamerwall-pro-p-pozharnii-fon-krasivie-22.jpg)">
+                                <div class="itcss__item" style="background: url(./img/1648105175_22-gamerwall-pro-p-pozharnii-fon-krasivie-22.jpg);background-size: cover;">
                                     <div class="container">
                                         <p style="color: black">Принят новый перечень документов по выполнению требований Технического регламента о требованиях пожарной безопасности</p>
                                         <p style="color: black">
@@ -505,15 +675,6 @@
     <footer>
         <div class="bottom">
             <div class="container">
-                <div class="pred">
-                    <span>Получить коммерческое предложение:</span>
-                    <a rel="nofollow"
-                        href="https://drive.google.com/file/d/1epljFiXzOwdyUiia_K_azPbiyiBKlmAr/view?usp=sharing"
-                        target="_blank">по услугам в области пожарной безопасности</a>
-                    <a rel="nofollow"
-                        href="https://drive.google.com/file/d/1Jdny-9YF24Xo85Ol67sjdhi8dQpwYJ_h/view?usp=sharing"
-                        target="_blank">по обучению</a>
-                </div>
                 <iframe src="https://yandex.ru/sprav/widget/rating-badge/69352088020?type=rating&theme=dark" width="150" height="50" frameborder="0"></iframe>
                 <div class="title">
                     <span>OOO "УЧЕБНО-ПРОИЗВОДСТВЕННЫЙ ЦЕНТР 68"</span>
