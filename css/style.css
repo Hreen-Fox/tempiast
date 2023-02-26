@@ -60,6 +60,10 @@ header .content-header-bottom{
     align-items: center;
     padding: 5px 0;}
 header .content-header-bottom .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-right: 15px;}
 header .content-header-bottom .logo a{
     display: flex;
@@ -68,6 +72,12 @@ header .content-header-bottom .logo a{
     font-weight: bold;
     font-size: 30px;
     color: #526371;}
+header .content-header-bottom .logo a:last-child{
+    font-size: 18px;
+    border: 2px solid #526371;
+    width: min-content;
+    padding: 5px;
+}
 header .content-header-bottom .logo img{
     width: 75px;
     height: 75px;
