@@ -17,7 +17,10 @@ main{
     flex-grow: 3;}
 i{
     margin-right: 5px;}
-
+a#disabled{
+    pointer-events: none;
+    color: lightgray;
+    text-decoration: line-through;}
 
 
 header{
@@ -81,6 +84,7 @@ header .content-header-bottom nav a, header .content-header-bottom nav .dropbtn,
     margin: 3px;
     font-size: 18px;}
 .auth:hover{
+    border-color: #3695EB;
     font-weight: bold;}
 header .content-header-bottom nav a:hover,header .content-header-bottom nav .dropbtn:hover{
     border-color: #3695EB;
@@ -160,3 +164,47 @@ footer .bottom .container > div{
     display: flex;}
 footer .bottom .pred{
     flex-direction: column;}
+
+
+
+    .rowLink {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .rowLink a {
+        color: #386ba8;
+    }
+
+    .rowLink a:hover {
+        color: black;
+    }
+
+    .rowLink>span:not(.ezp) {
+        margin: 0 10px;
+    }
+
+    .rowLink span span {
+        color: #888;
+        font-size: 14px;
+        display: block;
+    }
+     
+    .ezp{
+        text-transform: uppercase;
+        border-radius: 2px;
+        background-color: lightgray;
+        font-size: 14px;
+        padding: 0 6px;
+        height: 18px;
+        line-height: 17px;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: auto;
+    }
+    .ezp.done{
+        background-color: lightgreen;
+    }
