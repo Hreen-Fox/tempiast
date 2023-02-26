@@ -54,6 +54,21 @@ header .content-header-top .phone a{
 header .content-header-top .phone a img{
     width: 15px;
     height: 15px;}
+.wrapp-middle{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #526371;
+    padding: 5px;
+}
+.twoVer{
+    font-size: 18px;
+    padding: 7px;
+    border: 2px solid #526371;
+    color: #526371;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
 header .content-header-bottom{
     display: flex;
     justify-content: space-between;
@@ -72,12 +87,6 @@ header .content-header-bottom .logo a{
     font-weight: bold;
     font-size: 30px;
     color: #526371;}
-header .content-header-bottom .logo a:last-child{
-    font-size: 18px;
-    border: 2px solid #526371;
-    width: min-content;
-    padding: 5px;
-}
 header .content-header-bottom .logo img{
     width: 75px;
     height: 75px;
@@ -202,7 +211,7 @@ footer .bottom .pred{
         display: block;
     }
      
-    .ezp{
+    a.ezp{
         text-transform: uppercase;
         border-radius: 2px;
         background-color: lightgray;
@@ -211,10 +220,17 @@ footer .bottom .pred{
         height: 18px;
         line-height: 17px;
         color: #fff;
-        cursor: pointer;
         font-weight: bold;
         margin-left: auto;
+        text-decoration: none;
+        pointer-events: none;
     }
-    .ezp.done{
+    a.ezp.done{
+        pointer-events: all;
         background-color: lightgreen;
+        cursor: pointer;
+    }
+    a.ezp:hover{
+        color: #fff;
+        text-decoration: underline;
     }

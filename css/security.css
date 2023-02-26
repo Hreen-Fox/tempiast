@@ -8,6 +8,7 @@
 }
 .itcss__item{
     height: auto;
+    max-height: 427px;
 }
 .itcss__btn{
     background: rgb(0 0 0 / 50%);
